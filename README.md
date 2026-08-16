@@ -108,6 +108,11 @@ None. No Etsy account or login is required  the actor reads public listing and r
 
 ## 💰 Pricing
 
+🎉 **Free for now** — full listing details and reviews, no charge, while the actor is in its launch period. Tiered pay-per-event pricing (shown below) is ready to go and will be announced here before it's ever turned on.
+
+<!--
+PRICING SECTION (restore this table + copy when monetization is activated)
+
 How much does it cost to scrape Etsy? This actor uses **pay-per-event** pricing, so you pay only for the data you receive.
 
 | Event | FREE | BRONZE | SILVER | GOLD |
@@ -121,6 +126,7 @@ How much does it cost to scrape Etsy? This actor uses **pay-per-event** pricing,
 - **FREE plan**: ~$0.030 details + $1.50 reviews + $0.015 start ≈ **$1.55**
 
 > 💡 Tip: set `maxReviews: 10` first to test your setup before running a full extraction. Turn `includeReviews` off when you only need product data  it's cheaper and faster.
+-->
 
 ---
 
@@ -196,7 +202,8 @@ If a URL points to a listing that has been removed or never existed, you get a c
 No. It only reads publicly available listing and review data.
 
 **How many reviews can I extract for free?**
-On the FREE plan reviews are $1.50 / 1,000, so Apify's $5 free monthly credit covers roughly 3,000 reviews (plus a few cents per listing and actor start). Higher plans go much further.
+All of them  the actor is free to use during its launch period, no per-event charges apply yet.
+<!-- Restore with pricing activation: On the FREE plan reviews are $1.50 / 1,000, so Apify's $5 free monthly credit covers roughly 3,000 reviews (plus a few cents per listing and actor start). Higher plans go much further. -->
 
 **Can I get product details without reviews?**
 Yes  set `includeReviews: false`. You get one listing-details record per URL and no review charges.
