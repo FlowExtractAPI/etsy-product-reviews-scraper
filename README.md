@@ -108,25 +108,18 @@ None. No Etsy account or login is required  the actor reads public listing and r
 
 ## 💰 Pricing
 
-🎉 **Free for now** — full listing details and reviews, no charge, while the actor is in its launch period. Tiered pay-per-event pricing (shown below) is ready to go and will be announced here before it's ever turned on.
-
-<!--
-PRICING SECTION (restore this table + copy when monetization is activated)
-
-How much does it cost to scrape Etsy? This actor uses **pay-per-event** pricing, so you pay only for the data you receive.
+How much does it cost to scrape Etsy? This actor uses **pay-per-event** pricing, so you pay only for the data you receive  no actor-start fee, no hidden costs, just results.
 
 | Event | FREE | BRONZE | SILVER | GOLD |
 |---|---|---|---|---|
-| Listing details (per record) | $0.030 | $0.010 | $0.008 | $0.006 |
-| Reviews (per 1,000) | $1.50 | $0.70 | $0.60 | $0.50 |
-| Actor start (per GB memory) | $0.015 | $0.005 | $0.005 | $0.005 |
+| Listing details (per record) | $0.005 | $0.004 | $0.0035 | $0.003 |
+| Reviews (per 1,000) | $2.00 | $0.80 | $0.60 | $0.40 |
 
 **Cost estimate examples** (1 listing + 1,000 reviews):
-- **GOLD plan**: ~$0.006 details + $0.50 reviews + ~$0.005 start ≈ **$0.51**
-- **FREE plan**: ~$0.030 details + $1.50 reviews + $0.015 start ≈ **$1.55**
+- **GOLD plan**: ~$0.003 details + $0.40 reviews ≈ **$0.40**
+- **FREE plan**: ~$0.005 details + $2.00 reviews ≈ **$2.01**
 
 > 💡 Tip: set `maxReviews: 10` first to test your setup before running a full extraction. Turn `includeReviews` off when you only need product data  it's cheaper and faster.
--->
 
 ---
 
@@ -202,8 +195,7 @@ If a URL points to a listing that has been removed or never existed, you get a c
 No. It only reads publicly available listing and review data.
 
 **How many reviews can I extract for free?**
-All of them  the actor is free to use during its launch period, no per-event charges apply yet.
-<!-- Restore with pricing activation: On the FREE plan reviews are $1.50 / 1,000, so Apify's $5 free monthly credit covers roughly 3,000 reviews (plus a few cents per listing and actor start). Higher plans go much further. -->
+On the FREE plan reviews are $2.00 / 1,000, so Apify's $5 free monthly credit covers roughly 2,500 reviews (plus a few cents per listing). Higher plans go much further.
 
 **Can I get product details without reviews?**
 Yes  set `includeReviews: false`. You get one listing-details record per URL and no review charges.
